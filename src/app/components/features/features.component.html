@@ -1,0 +1,9 @@
+
+ <div class="row">
+  <div class="col-md-3 text-center"  *ngFor="let feature of features">
+    <div class="stepNumber">{{feature.stepNumber.length > 1 ? feature.stepNumber : '0' +
+      feature.stepNumber}}</div>
+    <div class="title mb-2">{{feature.versionContent.title}}</div>
+    <div class="sub-title">{{feature.versionContent.body}}</div>
+  </div>
+ </div>
